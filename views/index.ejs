@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Centro de documentación de AMOVI</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/headers/header-default.css">
+    <link rel="stylesheet" href="./css/footers/footer-v2.css">
+    <link rel="stylesheet" type="text/css" href="/loading.css">
+    <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+
+</head>
+
+<body class="boxed-layout container">
+    <div id="loading-container">
+        <div id="loading-logo">
+            <img src="./img/LogoAmoviVerde.png" alt="Logo">
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loadingContainer = document.getElementById("loading-container");
+            loadingContainer.style.display = "none";
+        });
+    </script>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="container">
+
+                <a class="logo" href="/">
+                    <img src="./img/LogoAmoviVerde.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="/products_amovi">Productos<br>AMOVI</a></li>
+                        <!-- <li><a href="project_summary.html#purpose">Resumen<br>Proyectos</a></li> -->
+                        <li class="nav-item">
+                            <a>Temas y<br>categorías</a>
+                            <div class="submenu">
+                                <a href="/historia">Historia</a>
+                                <a href="/funprocep">Funprocep</a>
+                                <a href="/ruta_pacifica">Ruta Pacífica</a>
+                                <a href="/dpi">Derecho, Política Pública e Instituciones</a>
+                                <a href="/ddhhmc">Derechos Humanos, Memoria y Conflicto</a>
+
+                            </div>
+                        </li>
+                        <li><a href="/information_amovi">Informacion</a></li>
+                        <li><a href="https://fondo-digital-putumayo-y-catatumbo.netlify.app/" target="_blank">Repositorio</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="portfolio-carousel" class="carousel slide carousel-v2" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+            </ol>
+            <div class="carousel-inner">
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-fb9092b7-ade0-4836-a402-20a3129aa1fb" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+        <script>
+            feather.replace();
+        </script>
+    </div> -->
+
+        <div id="portfolio-carousel" class="carousel slide carousel-v2" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li class="active rounded-x" data-target="#portfolio-carousel" data-slide-to="0"></li>
+                <li class="rounded-x" data-target="#portfolio-carousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="full-width img-responsive" src="./img/banner3.webp" alt="">
+                </div>
+                <div class="item">
+                    <img class="full-width img-responsive" src="./img/banner2.webp" alt="">
+                </div>
+            </div>
+            <script>
+                feather.replace();
+            </script>
+
+            <a class="left carousel-control rounded-x" href="#portfolio-carousel" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="right carousel-control rounded-x" href="#portfolio-carousel" role="button" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <style>
+            @font-face {
+                font-family: 'FuenteUIS';
+                src: url('./Fonts/HUM521N.TTF') format('truetype');
+            }
+
+            .purchase h2 {
+                font-family: 'FuenteUIS', Arial, sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .carousel-control i {
+                color: #10892a;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                background-color: #F0F0F0;
+                border-radius: 50%;
+            }
+
+
+
+            .navbar-nav>li>.submenu {
+                display: none;
+            }
+
+            .navbar-nav>li:hover>.submenu {
+                display: block;
+                position: absolute;
+                background-color: #72c02c;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                width: 200px;
+                padding: 10px;
+            }
+
+
+            .navbar-nav>li:hover>.submenu a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                padding: 8px;
+            }
+
+            .navbar-nav>li:hover>.submenu a:hover {
+                background-color: #38743a;
+            }
+
+            .navbar-nav>li:hover>.submenu a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                padding: 8px;
+                font-size: 13px;
+
+            }
+
+            .navbar-nav>li:hover>.submenu a:hover {
+                background-color: #45a049;
+            }
+        </style>
+        <div class="purchase">
+            <div class="container overflow-h">
+                <div class="row">
+                    <div>
+                        <h2 class="heading heading-v2 margin-bottom-10"><strong>
+                                " Con las víctimas tejemos la memoria histórica del país ".</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 container content">
+            <div class="col-md-6 md-margin-bottom-40">
+                <h2 class="text-center">AMOVI <a href="/">Búsqueda Avanzada</a></h2>
+                <form class="search-form" action="/advanced-search" method="get">
+                    <div class="input-group">
+                        <select class="form-control" name="field" id="field">
+                            <option value="author">Autor</option>
+                            <option value="year">Año</option>
+                            <option value="inventory">Número de Inventario</option>
+                        </select>
+                        <input class="form-control" type="text" name="value" placeholder="Ingrese su búsqueda..."
+                            required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-u" type="submit">Buscar</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-6 md-margin-bottom-40">
+                <h2 class="text-center">AMOVI <a href="/">Base de datos bibliográfica</a></h2>
+
+
+                <form target="_parent" id="searchglobalprocessor" name="searchglobalprocessor"
+                    class="col-md-10 col-md-offset-1" action="/search" method="get">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="Buscar recursos de AMOVI..."
+                            required>
+                        <span class="input-group-btn">
+                            <button class="btn-u btn-boarded" type="submit"><i class="search-button"></i>
+                                Buscar </button>
+                        </span>
+                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core
+                            defer></script>
+                        <div class="elfsight-app-e4959fcd-0139-40c1-83dc-4fc1c13e04f8" data-elfsight-app-lazy></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12" style="margin-top:30px">
+
+
+            </div>
+        </div>
+
+        <div class="footer-v2">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"><img src="./img/logo_negro_horz_.webp" height="20" alt="VTC"></div>
+                        <div class="col-md-6">
+                            <p class="">
+                                &copy; 2023 Archivo Oral de Memoria de las Victimas UIS. <a
+                                    href="https://www.instagram.com/amovioficial/" target="new">Instagram</a> |
+                                <a href="https://www.facebook.com/profile.php?id=100090040570193"
+                                    target="new">Facebook</a>
+                                |
+                                <a href="https://uis.edu.co/uis-amovi-es/?fbclid=IwAR1VBehbTUqNmxNJ5xOZ4W0Jq6qIdw9FWIVSv-EaUteyc8MtI0zOfS6WffM"
+                                    target="new">Página Principal</a>
+
+                            </p>
+                        </div>
+                        <div class="col-md-5 "></div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./plugins/smoothScroll.js"></script>
+    <script type="text/javascript" src="./plugins/parallax-slider/js/modernizr.js"></script>
+    <script type="text/javascript" src="./plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="./plugins/owl-carousel2/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/plugins/owl-carousel2.js"></script>
+    <script type="text/javascript" src="./js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="./js/plugins/parallax-slider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            App.init();
+            OwlCarousel.initOwlCarousel();
+            StyleSwitcher.initStyleSwitcher();
+            ParallaxSlider.initParallaxSlider();
+        });
+    </script>
+</body>
+
+</html>

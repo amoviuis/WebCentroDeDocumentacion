@@ -1,0 +1,194 @@
+/*
+
+ * Template Name: Unify - Responsive Bootstrap Template
+
+ * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
+
+ * Version: 1.9.2
+
+ * Author: @htmlstream
+
+ * Website: http://htmlstream.com
+
+*/
+
+/*Import Global Compulsory CSS Files*/
+
+@import url(app.css);
+@import url(blocks.css);
+/*Import CSS Plugins*/
+
+@import url(plugins/style-switcher.css);
+* {
+    border-radius: 0;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-group select,
+.input-group input,
+.input-group button {
+    margin-right: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+body {
+    color: #333;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+body.header-fixed-space {
+    padding-top: 94px;
+}
+
+body.header-fixed-space-v2 {
+    padding-top: 135px;
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 13px;
+        padding: 0px 10px 0px 10px;
+    }
+    body.header-fixed-space,
+    body.header-fixed-space-v2 {}
+}
+
+@media (max-width: 780px) {
+    h2 {
+        font-size: 11px;
+        padding: 0px 10px 0px 10px
+    }
+    body.header-fixed-space,
+    body.header-fixed-space-v2 {}
+}
+
+@media screen and (max-device-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+        font-family: Helvetica, Arial, Verdana, sans-serif;
+        padding: 5px;
+    }
+}
+
+p,
+li,
+li a,
+label {
+    color: #555;
+}
+
+a {
+    color: #009B68;
+    text-decoration: none;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+button,
+button:hover {
+    outline: 0 !important;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009B68;
+    text-decoration: underline;
+}
+
+/*Boxed Layout
+
+------------------------------------*/
+
+.wrapper {
+    background: #fff;
+}
+
+.boxed-layout {
+    padding: 0;
+    box-shadow: 0 0 5px #ccc;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: url(../img/patterns/15.png) repeat;
+}
+
+/*Hiding arrows for select field in IE*/
+
+select::-ms-expand {
+    display: none;
+}
+
+/* photo galery code*/
+
+.gallerycolumn {
+    float: left;
+    padding: 10px 80px 10px 20px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+/*
+div.gallery:hover {
+    border: 1px solid #777;
+}*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.galleryresponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.solidline {
+    border-bottom-color: #e1dcdd;
+    border-bottom-style: solid;
+}
+
+@media (min-width:375px) {
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    div.desc {
+        padding: 3px;
+        font-size: 11px;
+        text-align: left;
+    }
+}

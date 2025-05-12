@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .footer {
+      background-color: #006837;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-semibold mb-6">Detalles de la búsqueda:</h1>
+        <table class="table-auto w-full border rounded-lg overflow-hidden">
+            <tbody>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Número de inventario:</th>
+                    <td class="px-4 py-2"><%= item["No_Inventario"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Título:</th>
+                    <td class="px-4 py-2"><%= item["Título"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Subtitulo:</th>
+                    <td class="px-4 py-2"><%= item["Subtítulo"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Autor(es):</th>
+                    <td class="px-4 py-2"><%= item["Autor(es)"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Colección:</th>
+                    <td class="px-4 py-2"><%= item["Colección"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Tomo, vol.</th>
+                    <td class="px-4 py-2"><%= item["Tomo_vol"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Año:</th>
+                    <td class="px-4 py-2"><%= item["Año"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Número Edición:</th>
+                    <td class="px-4 py-2"><%= item["No_Ed"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Ubicación Geográfica:</th>
+                    <td class="px-4 py-2"><%= item["Ubi_Geog"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Línea Temática:</th>
+                    <td class="px-4 py-2"><%= item["Linea temática"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Tipo de material:</th>
+                    <td class="px-4 py-2"><%= item["Tipo de material"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Palabra clave 1 (Temporalidad):</th>
+                    <td class="px-4 py-2"><%= item["PC1: temporalidad"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Palabra clave 2 (Territorio):</th>
+                    <td class="px-4 py-2"><%= item["PC2: Territorio"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Palabra clave 3 (Temática principal)</th>
+                    <td class="px-4 py-2"><%= item["PC3: Principal "] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Palabra clave 4 (temática secundaria)</th>
+                    <td class="px-4 py-2"><%= item["PC4: Secundaria"] %></td>
+                </tr>
+                
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">No. de páginas</th>
+                    <td class="px-4 py-2"><%= item["No_Págs"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Editorial</th>
+                    <td class="px-4 py-2"><%= item["Editorial"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">ISBN</th>
+                    <td class="px-4 py-2"><%= item["ISBN"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">ISSN</th>
+                    <td class="px-4 py-2"><%= item["ISSN"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Soporte</th>
+                    <td class="px-4 py-2"><%= item["Soporte"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Formato</th>
+                    <td class="px-4 py-2"><%= item["Formato"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Número de ejemplares</th>
+                    <td class="px-4 py-2"><%= item["Cant_Ejemp"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Notas Bibliográficas</th>
+                    <td class="px-4 py-2"><%= item["Notas"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Colección</th>
+                    <td class="px-4 py-2"><%= item["Colección"] %></td>
+                </tr>
+                <tr class="border-t">
+                    <th class="text-left px-4 py-2" scope="row">Estado</th>
+                    <td class="px-4 py-2"><%= item["Est_Consulta"] %></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mt-6 text-center">
+            <a href="/" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 inline-block" style="transition: background-color 0.3s;">Volver al Home</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p class="">
+        &copy; 2023 Archivo Oral de Memoria de las Victimas UIS. 
+    </p>
+</body>
+</html>
+
+
+

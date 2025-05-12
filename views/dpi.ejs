@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/search.css"> 
+  <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+  <title>Resultados de la búsqueda</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Resultados de la búsqueda:</h1>
+    <img src="./img/LogoAmoviNegro.png" alt="Logo AMOVI" class="logo">
+    <% if (typeof count !== 'undefined' && count > 0) { %>
+      <div class="search-box mb-3">
+        <label for="search" class="form-label">Filtrar búsqueda:</label>
+        <input type="text" id="search" class="form-control" name="search" onkeyup="filterTable()">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <p>Cantidad de documentos en la línea de Derecho, Política Pública e Instituciones: <%= count %></p>
+
+    <table id="recordTable" class="table">
+      <thead>
+        <tr>
+          <th>Número de inventario</th>
+          <th>Título</th>
+          <th>Subtitulo</th>
+          <th>Autor(es)</th>
+          <th>Año</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach(item => { %>
+          <tr>
+            <td><%= item["No_Inventario"] %></td>
+            <td><%= item["Título"] %></td>
+            <td><%= item["Subtítulo"] %></td>
+            <td><%= item["Autor(es)"] %></td>
+            <td><%= item["Año"] %></td>
+            <td><a href="/details/<%= item._id %>"><i class="fas fa-chevron-right details-icon"></i></a></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </main>
+
+  <% } else { %>
+    <p>No se encontraron resultados.</p>
+  <% } %>
+
+  <footer class="footer">
+    <p>&copy; 2023 Archivo Oral de Memoria de las Víctimas UIS.</p>
+  </footer>
+
+  <script src="./js/search.js"></script> 
+</body>
+
+</html>

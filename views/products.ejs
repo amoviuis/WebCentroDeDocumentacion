@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/products.css">
+  <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+  <title>Resultados de la búsqueda</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Resultados de la búsqueda:</h1>
+    <img src="./img/LogoAmoviNegro.png" alt="Logo AMOVI" class="logo">
+    <% if (results.length> 0) { %>
+      <div class="search-box mb-3">
+        <label for="search" class="form-label">Filtrar búsqueda:</label>
+        <input type="text" id="search" class="form-control" name="search" onkeyup="filterTable()">
+      </div>
+  </header>
+  </div>
+  <main class="container">
+    <table id="recordTable" class="table">
+      <thead>
+        <tr>
+          <th>Tipo de producto académico</th>
+          <th>Título</th>
+          <th>Formato</th>
+          <th>Autor (A)</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach(item=> { %>
+          <tr>
+            <td>
+              <%= item["TIPO DE PRODUCTO ACADÉMICO"] %>
+            </td>
+            <td>
+              <%= item["TÍTULO"] %>
+            </td>
+            <td>
+              <%= item["FORMATO"] %>
+            </td>
+            <td>
+              <%= item["AUTOR (A)"] %>
+            </td>
+            <td><a href="/details_products/<%= item._id %>"><i class="fas fa-chevron-right details-icon"></i></a></td>
+          </tr>
+          <% }); %>
+      </tbody>
+    </table>
+  </main>
+  <% } else { %>
+    <p>No se encontraron resultados.</p>
+    <% } %>
+      <footer class="footer">
+        <p>&copy; 2023 Archivo Oral de Memoria de las Víctimas UIS.</p>
+      </footer>
+      <script src="./js/products.js"></script>
+</body>
+
+</html>

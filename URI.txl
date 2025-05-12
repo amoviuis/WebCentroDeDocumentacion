@@ -1,0 +1,1 @@
+const uri = "mongodb+srv://irvin:1234@clusteramovi.etgkuek.mongodb.net/Inventario_CentroDe_Documentacion?retryWrites=true&w=majority";

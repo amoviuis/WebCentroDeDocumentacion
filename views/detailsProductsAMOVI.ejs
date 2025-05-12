@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .footer {
+      background-color: #006837;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-semibold mb-6">Detalles de la búsqueda:</h1>
+        <table class="table-auto w-full border rounded-lg overflow-hidden">
+            <tbody>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Tipo de producto acádemico:</th>
+                    <td class="px-4 py-2"><%= item["TIPO DE PRODUCTO ACADÉMICO"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Título:</th>
+                    <td class="px-4 py-2"><%= item["TÍTULO"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Año</th>
+                    <td class="px-4 py-2"><%= item["AÑO"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Autor(A):</th>
+                    <td class="px-4 py-2"><%= item["AUTOR (A)"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Resumen:</th>
+                    <td class="px-4 py-2"><%= item["Resumen"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Nº de páginas:</th>
+                    <td class="px-4 py-2"><%= item["Nº PAGINAS"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Revista:</th>
+                    <td class="px-4 py-2"><%= item["REVISTA"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Formato:</th>
+                    <td class="px-4 py-2"><%= item["FORMATO"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Institución:</th>
+                    <td class="px-4 py-2"><%= item["INSTITUCIÓN"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Descriptor 1:</th>
+                    <td class="px-4 py-2"><%= item["DESCRIPTOR 1"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Descriptor 2:</th>
+                    <td class="px-4 py-2"><%= item["DESCRIPTOR 2 "] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Descriptor 3:</th>
+                    <td class="px-4 py-2"><%= item["DESCRIPTOR 3"] %></td>
+                </tr>
+                <tr class="bg-gray-300">
+                    <th class="text-left px-4 py-2" scope="row">Descriptor 4:</th>
+                    <td class="px-4 py-2"><%= item["DESCRIPTOR 4 "] %></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class="mt-6 text-center">
+            <a href="<%= item["LICK DE ACCESO"] %>" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-700 inline-block">Link de Acceso</a>
+        </div>
+        <div class="mt-6 text-center">
+            <a href="/" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 inline-block" style="transition: background-color 0.3s;">Volver al Home</a>
+        </div>
+    </div>
+    <div class="footer">
+      <p class="">
+        &copy; 2023 Archivo Oral de Memoria de las Victimas UIS. 
+    </p>
+</body>
+</html>
+
+
+

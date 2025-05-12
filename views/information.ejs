@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Documentación | AMOVI-UIS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <link rel="icon" href="./img/ICON.jpeg" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(247, 243, 243);
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .logo img {
+            width: 180px;
+            height: auto;
+        }
+
+        .info-box {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: #eaf8ed; /* Verde pastel claro */
+            border-left: 6px solid #5a9a6f; /* Verde medio para contraste */
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mx-auto py-12 px-6">
+
+    <header class="flex items-center mb-10">
+        <a class="logo" href="/">
+            <img src="./img/LogoAmoviVerde.png" alt="Logo">
+        </a>
+        <div class="ml-4">
+            <h1 class="text-4xl font-bold text-gray-800">Centro de Documentación Especializado y Autorizado</h1>
+            <p class="text-gray-600 mt-2 text-lg">Garantizando el acceso a la verdad y la memoria histórica</p>
+        </div>
+    </header>
+
+    <div class="info-grid">
+        <div class="info-box">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">¿Qué es un Centro de Documentación Especializado?</h2>
+            <p class="text-gray-700">
+                El centro de documentación especializado de AMOVI-UIS tiene por objetivo la recopilación, preservación, organización y difusión pública de recursos documentales enfocados en un área temática concreta como lo son los Derechos Humanos.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h2 class="text-xl font-semibold text-gray-800">Autorización y Respaldo</h2>
+            <p class="text-gray-700 mt-2">
+                El centro de documentación especializado de AMOVI-UIS (Archivo Oral de Memoria de las Víctimas) recibe respaldo principalmente de la Universidad Industrial de Santander (UIS), pero también de otras organizaciones e instituciones quienes a través de donaciones contribuyen a su crecimiento y difusión.
+            </p>
+        </div>
+    </div>
+
+    <!-- Más que un Archivo -->
+    <div class="info-box">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">AMOVI-UIS: Memoria Viva para la Verdad y la Justicia</h2>
+        <p class="text-gray-700 leading-relaxed">
+            El archivo se configura como un espacio que impulsa la reivindicación de los derechos de las víctimas, fomentando la participación activa de las comunidades en la construcción de una memoria colectiva que reconozca la verdad de los hechos. Al preservar y difundir relatos que evidencian las violaciones a los Derechos Humanos, AMOVI-UIS contribuye a generar conciencia y a promover procesos de reparación y justicia. La historia oral recogida se convierte en un motor para impulsar cambios estructurales, utilizando el pasado como base para construir un futuro basado en la verdad y la dignidad.
+        </p>
+    </div>
+
+    <!-- Documentos Relevantes -->
+    <div class="info-box">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Documentos Relevantes</h2>
+        <p class="text-gray-700 mb-4">
+            Consulta y descarga los documentos oficiales que rigen y contextualizan la labor del Archivo Oral de Memoria de las Víctimas (AMOVI-UIS). Estos documentos son fundamentales para comprender el funcionamiento, los principios y el impacto de este archivo en la preservación de la memoria histórica y la defensa de los derechos humanos.
+        </p>
+
+        <div class="flex flex-col items-center gap-8">
+            <!-- Primer Documento PDF -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center w-full md:w-3/4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                    Reglamento general del Archivo Oral de Memoria de las Víctimas AMOVI-UIS
+                </h3>
+                <iframe src="https://uis.edu.co/wp-content/uploads/2022/05/reglamentoAMOVI-UIS.pdf"
+                        width="100%" height="600" class="border"></iframe>
+            </div>
+
+            <!-- Segundo Documento PDF -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center w-full md:w-3/4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                    Archivo Oral de Memoria de las Víctimas AMOVI-UIS: Un Archivo de
+                    Derechos Humanos
+                </h3>
+                <iframe src="https://uis.edu.co/wp-content/uploads/2022/08/presentacionAMOVI-UIS.pdf"
+                        width="100%" height="600" class="border"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-12">
+        <p class="text-gray-600">© 2024 Archivo Oral de Memoria de las Victimas UIS</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
